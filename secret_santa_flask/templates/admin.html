@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    <p>What are you doing here {{ current_user.username }}?</p>
+    {% if current_user.username == 'Jordan' %}
+    <form method="post" action="/admin">
+        <input type="submit" name="submit_button" value="Randomize Assignees">
+    </form>
+    {% endif %}
+{% endblock content%}   

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col" align="center">
+            <img class="image-thumbnail" src="{{ virus_pic }}" style="width: 300px; height: 300px;">
+        </div>  
+        <div class="col"></div>
+    </div>
+    <div class="row">
+        <div class="container d-flex justify-content-center" style="padding: 25px 0px 25px 0px;">
+            <div class="row">
+                <div class="col-md-9 col-sm-6">
+                    <div class="progress blue"> <span class="progress-left"> <span class="progress-bar"></span> </span> <span class="progress-right"> <span class="progress-bar"></span> </span>
+                        <div class="progress-value">100%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col" style="text-align: center;"><h2 style = "color: red">You have an actual virus on your computer now lmao</h2></div>
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock content%}   
